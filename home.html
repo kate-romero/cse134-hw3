@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kate Romero's Portfolio: Homepage</title>
+
+    <meta name="description" content="The homepage of Kate Romero's professional portfolio">
+    <meta name="author" content="Kate Romero">
+    <meta name="GitHub:site" content="@kate-romero">
+    <meta name="LinkedIn:site" content="@romerokate">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ol>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./work-experience.html">Work Experience</a></li>
+            </ol>
+        </nav>
+
+        <h1>Kate Romero's Portfolio: Home</h1>
+
+    </header>
+
+    <main>
+
+        <hgroup>
+            <h2>About Me</h2>
+            <p>Embedded systems intern with experience developing low-level firmware
+                on STM32 and RP2040 platforms. Skilled in C/C++, sensor integration 
+                (I2C, SPI, UART), and debugging with GDB and logic analyzers. 
+                Passionate about low-power systems and real-time embedded design.
+                <br><br>
+                Experienced tutor and instructor for <em>kinder - university.</em> 
+                Dedicated to bringing CS Education to <strong>all</strong>
+            </p>
+        </hgroup>
+
+        <code>
+                #include &lt;stdio.h&gt;
+                
+                int main() {
+                    printf("Hello, World!");
+                    return 0;
+                }
+        </code>
+        <hello-world></hello-world>
+
+        <h2>Contacts & Links</h2>
+
+        <address>
+            Email: <a href="mailto:kgromero@ucsd.edu">kgromero@ucsd.edu</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/romerokate/">linkedin.com/in/romerokate/</a><br>
+            GitHub: <a href="https://github.com/kate-romero">github.com/kate-romero</a><br>
+        </address>
+
+        <h2>Have Me Contact You</h2>
+
+        <form>
+
+            <label>Name:
+                <input type="text" name="name" required>
+            </label>
+
+            <label>Email:
+                <input type="email" name="email">
+            </label>
+
+            <label>Call:
+                <input type="tel" name="call">
+            </label>
+
+            <label>Text:
+                <input type="tel" name="text">
+            </label>
+
+            <fieldset>
+                <legend>Reason For Reaching Out</legend>
+
+                <label for="industry">Industry Position:
+                    <input type="checkbox" name="industry_position" id="industry" value="industry">
+                </label>
+
+                <label for="teach">Teaching Position:
+                    <input type="checkbox" name="teaching_position" id="teach" value="teach">
+                </label>
+                
+                <label for="contract">Contract Work:
+                    <input type="checkbox" name="contract_work" id="contract" value="contract">
+                </label>
+
+                <label for="other">Other:
+                    <input type="checkbox" name="other" id="other" value="other">
+                </label>
+            </fieldset>
+
+            <label for="comments">Comments:
+                <textarea id="comments" name="comments" rows="5" cols="33">
+                </textarea>
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+            // Define a new custom element called <hello-world>
+            class HelloWorld extends HTMLElement {
+                connectedCallback() {
+                    console.log("Hello, World!");
+                }
+            }
+
+            // Register the custom element
+            customElements.define('hello-world', HelloWorld);
+        </script>
+        
+    </main>
+
+    <footer>
+        Thanks for visiting!
+    </footer>
+
+</body>
+</html>

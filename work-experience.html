@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kate Romero's Portfolio: Work Experience</title>
+
+    <meta name="description" content="The homepage of Kate Romero's professional portfolio">
+    <meta name="author" content="Kate Romero">
+    <meta name="GitHub:site" content="@kate-romero">
+    <meta name="LinkedIn:site" content="@romerokate">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <style>
+        job-entry {
+            display: block;
+            padding: 1rem;
+            border-bottom: 1px solid #000;
+        }
+
+        /* Align all italic text to the right inside job-entry */
+        job-entry i {
+            float: right;
+        }
+
+        /* Reduce spacing around h2 and h3 inside job-entry */
+        job-entry h2,
+        job-entry h3,
+        job-entry h4 {
+            margin-top: 0.25rem;
+            margin-bottom: .75rem;
+            padding: 0;
+        }
+
+        job-entry h2,
+        job-entry h3 {
+            display: inline;
+        }
+
+        job-entry ul {
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./work-experience.html">Work Experience</a></li>
+            </ol>
+        </nav>
+        <h1>Kate Romero's Portfolio: Work Experience</h1>
+    </header>
+    <main>
+
+        <job-entry>
+            <h2>2G Engineering, </h2>
+            <h3>Sun Prairie, WI</h3>
+            <i>June 2024 - August 2024</i>
+            <h4>Embedded Systems Intern</h4>
+            <ul>
+                <li>Developed firmware for BLDC Simulator to test sub-sea level rotary actuator</li>
+                <li>Utilized <b>hall effect sensors, SPI,</b> and <b>I2C</b> to control & observe motor-actuator interface</li>
+                <li>Coordinated <b>dual cores</b> on <b>RP2040</b> to reliably process speeds of up to 140 rpm</li>
+                <li><b>1st place for lowest energy</b> implementation achieved via use of Stop2 sleep mode</li>
+                <li><a href="https://github.com/kate-romero/BLDC_Simulator_Firmware">GitHub Repo</a> | 
+                    <a href="https://youtu.be/7H5ZqkXBpd8">Demonstration Video</a></li>
+            </ul>
+        </job-entry>
+
+        <job-entry>
+            <h2>CSE Tutor, </h2>
+            <h3>UCSD</h3>
+            <i>March 2024 - June 2024</i>
+            <h4>Tutor for CSE 30: Computer Organization and Systems Programming</h4>
+            <ul>
+                <li>Tutored students on course concepts of logic flow, memory management, <b>C</b>, and <b>ARM</b></li>
+                <li>Guided students in testing and debugging their own code using <b>GDB</b> and <b>Valgrind</b></li>
+                <li>Hosted office hours which were consistently among the most highly attended</li>
+            </ul>
+        </job-entry>
+
+        <aside>
+            <h2>Skills</h2>
+
+            <h3>Tools:</h3>
+                <ul>
+                    <li>GDB</li>
+                    <li>Valgrind</li>
+                    <li>Logic Analyzer</li>
+                    <li>Oscilloscope</li>
+                    <li>Git</li>
+                </ul>
+
+            <h3>Interfaces:</h3>
+                <ul>
+                    <li>I2C</li>
+                    <li>SPI</li>
+                    <li>UART</li>
+                    <li>GPIO</li>
+                </ul>
+
+            <h3>Platforms:</h3>
+                <ul>
+                    <li>STM32</li>
+                    <li>Raspberry Pi</li>
+                    <li>Linux</li>
+                </ul>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+
+
+</body>
+</html>
