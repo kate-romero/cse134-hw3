@@ -12,17 +12,104 @@
     <meta name="LinkedIn:site" content="@romerokate">
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/variables.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Comme", sans-serif;
+        }
+        
+        main {
+            -outline: blue solid 1px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            min-height: 80vh;
+            margin: 1.5rem 0;
+
+            & > * {
+                -outline: red solid 1px;
+                padding: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                
+
+                width: 40vw;
+                height: 75%;
+                border-radius: 16px;
+
+                &:first-child {
+                    -border: green solid 3px;
+                    align-self: flex-start;
+                    background-color: var(--green, black);
+
+                    * {
+                        background-color: var(--green, black);
+                        color: var(--ivory, white);
+                    }
+                }
+
+                &:last-child {
+                    -border: orange solid 3px;
+                    align-self: flex-end;
+                    background-color: var(--sienna, black);
+
+                    * {
+                        background-color: var(--sienna, black);
+                        color: var(--ivory, white);
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 900px) {
+            
+            main {
+                flex-direction: column;
+                gap: 3rem;
+                margin: 2rem 0;
+
+                & > * {
+                    align-self: center !important;
+                    width: 80vw;
+                }
+            }
+        }
+
+        * {
+            line-height: 1.5;
+        }
+
+        video, source, img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            
+        }
+
+        figure {
+            margin: 1.5rem 0;
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <nav>
-            <ol>
+            <ul>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./work-experience.html">Work Experience</a></li>
-            </ol>
+            </ul>
         </nav>
-        <h1>Kate Romero's Portfolio: Projects</h1>
+        <h1>Kate Romero's Portfolio: <span>Projects</span></h1>
     </header>
     <main>
 
@@ -48,9 +135,9 @@
             <h3>for UCSD CSE 190B with Prof. Aaron Schulman</h3>
             <figure>
                 <picture>
-                    <source srcset="images/youlostit_vert.jpeg" media="(width >= 1200px)" >
-                    <source srcset="images/youlostit_horiz.jpeg" >
-                    <img src="mages/youlostit_vert.jpeg" alt="" >
+                    <source srcset="images/compressed/youlostit_vert.jpeg" > <!-- media="(width >= 1200px)" -->
+                    <!-- <source srcset="images/compressed/youlostit_horiz.jpeg" width="250" > -->
+                    <img src="images/compressed/youlostit_vert.jpeg" alt="Photo of YouLostIt STM32 Microcontroller" >
                 </picture>
                 <figcaption>YouLostIt STM32 Microcontroller</figcaption>
             </figure>
