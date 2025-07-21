@@ -93,6 +93,7 @@
                 }
                 input, textarea {
                     background-color: var(--ivory, white);
+                    color: black;
                 }
             }
 
@@ -113,9 +114,17 @@
                 border: 1px solid black;
             }
 
+            textarea {
+                min-width: 50%;
+                max-width: 80%;
+                height: 6rem;
+            }
+
             button {
                 background-color: var(--charcoal, black);
                 color: var(--ivory, #FBFFF1);
+                width: 30ch;
+                align-self: center;
                 cursor: pointer;
                 &:hover {
                     background-color: var(--blue, black);
@@ -299,8 +308,7 @@
                 </fieldset>
 
                 <label for="comments">Comments:<br>
-                    <textarea id="comments" name="comments" rows="5" cols="33">
-                    </textarea>
+                    <textarea id="comments" name="comments"></textarea>
                 </label>
 
                 <button type="submit">Submit</button>
